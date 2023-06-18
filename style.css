@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+First nav
+    Problem:
+    -  How the objects are distributed among themselves if values are specified: flex:3, flex:1, flex:1, justify-content: flex-end
+*/
+
+.navigation {
+    margin: 10px 107px;
+}
+
+.all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.search img:first-of-type {
+    width: 22px;
+}
+
+.search img:nth-of-type(2) {
+    width: 15px;
+    padding-left: 17px;
+}
+
+.links {
+    display: flex;
+    font-size: 10px;
+    flex: 1;
+}
+
+.links a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.links a:first-of-type {
+    font-weight: bold;
+}
+
+.links a:last-of-type {
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action button:first-of-type {
+    width: 220px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(240, 240, 240);
+    background-color: rgb(50, 104, 144);
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.action button:nth-of-type(2) {
+    width: 100px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(242, 242, 242);
+    background-color: rgb(50, 104, 144);
+    border-color: transparent;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* 
+Second nav
+    Problem:
+    - line 116: space changes according to the margin-left
+*/
+
+.navigation2 {
+    margin: 10px 107px;
+}
+
+.all2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.date p:first-of-type {
+    font-weight: bold;
+}
+
+.navigation2 img {
+    width: 420px;
+    padding-right: 110px;
+}
+
+.stocks {
+    display: flex;
+    font-size: 14px;
+}
+
+.stocks p:nth-of-type(2) {
+    color: brown;
+    margin-left: 10px;
+}
+
+/* 
+Third nav
+    Problem: When hovering over a random link, the others seem to move away from it a bit (also in .navigation)
+*/
+
+.navigation3 {
+    margin: 10px 107px;
+    border-top: 1px solid rgb(232, 232, 232);
+}
+
+.arti {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px double rgb(135, 135, 135);
+}
+
+.arti a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: rgb(236, 236, 236);
+    transition: 0.8s;
+    padding: 4px 7px;
+}
+
+/* 
+Page
+    
+*/
+
+.page {
+    margin: 20px 107px;
+    display: flex;
+    flex: 10;
+}
+
+            /* Big */
+
+.article1 {
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.heads1 {
+    width: 36%;
+    flex: 1;
+    padding-right: 13px;
+}
+
+.interact1 {
+    background-color: black;
+    flex: 2;
+    height: 400px;
+}
+
+.interact1 img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.big1 {
+    flex: 7;
+    height: 400px;
+}
+
+.ar1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.ar2 {
+    padding-top: 20px;
+}
+
+.ar1 h2 {
+    font-size: 22px;
+    padding-bottom: 8px;
+    color: rgb(28, 28, 28);
+}
+
+.ar1 p {
+    color: rgb(126, 126, 126);
+}
+
+.ar2 h5 {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.ar2 p {
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+}
+
+            /* Small */
+
+.small1 {
+    flex: 3;
+    height: 2000px;
+    border-left: 1px solid rgb(155, 155, 155);
+    margin-left: 20px;
+}
+
+.smallarticles {
+    margin-left: 20px;
+    /*background-color: rgb(184, 184, 184);*/
+    height: 2000px;
+}
+
+.sm-article1 {
+    height: 365px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.sm-interact1 {
+    height: 230px;
+}
+
+.sm-interact1 img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.sm-heads1 {
+    padding-top: 20px;
+}
+
+.sm-heads1 p:first-of-type {
+    padding-bottom: 8px;
+    font-size: 26px;
+}
+
+.sm-heads1 p:nth-of-type(2) {
+    color: rgb(126, 126, 126);
+    padding-bottom: 8px;
+}
+
+.sm-heads1 p:last-of-type {
+    font-size: 11px;
+    color: rgb(126, 126, 126);
+}
+
+
+
+
+.sm-a1cont {
+    margin-top: 40px;
+    /*background-color: orange;*/
+    height: 400px;
+    display: flex;
+}
+
+
+
+.sm-a1cont-1 img {
+    width: 140px;
+    height: 100px;
+    background-color: black;
+}
+
+.sm-a1cont-2 img {
+    width: 140px;
+    height: 100px;
+    background-color: black;
+    
+}
